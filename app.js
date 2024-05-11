@@ -11,7 +11,7 @@ const app=express()
 const port=5000||process.env.PORT
 
 app.use(session({
-    secret: 'gymApp',
+    secret:process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
     store: MongoStore.create({
