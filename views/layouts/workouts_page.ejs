@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- locals.title %></title>
+    <meta name="description" content="<%- locals.description %>">
+    <link rel="stylesheet" href="../css/workouts.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body">
+
+<% try{ %>
+    <% if (userName) { %>
+        <%- include('../partials/header_dashboard.ejs') %>
+    <% } %>
+    <% } catch (error) { %>
+        <%- include('../partials/header.ejs') %>
+    <% } %>
+        
+    <%- body %>
+</body>
+<script src="../js/workouts.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

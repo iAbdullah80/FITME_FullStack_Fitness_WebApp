@@ -1,0 +1,104 @@
+<div class="data">
+    
+    <% try{ %>
+        <% if (userName) { %>
+            <h3>Welcome, <%= userName %></h3>
+        <% } %>
+        <% } catch (error) { %>
+            
+        <% } %>
+    <div onclick="workout(event)" class="workout">
+        <img class="workoutPic" src="../img/GymFitness2.png" alt="">
+        <div class="date">
+            <p>
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>,
+                <span id="daynum">00</span>
+            </p>
+        </div>
+
+        <div class="workoutDay" id="workoutDay">
+            <p>
+                <span id="1">Push Day Workout</span>
+                <span id="2">Pull Day Workout</span>
+                <span id="3">Leg Day Workout</span>
+            </p>
+        </div>
+
+    </div>
+
+   
+
+        <div class="container">
+            <div class="box" id="Calculator">
+            <h1>FIT Calculator</h1>
+            <div class="content">
+
+
+                <div class="input" id="input">
+                    <label for="height">Age</label>
+                    <input type="text" class="text-input" id="age" autocomplete="off" required/>
+                </div>
+
+                <div class="gender" id="gender">
+
+                    <label>
+                        <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                        
+                    </label>
+
+
+                    <label>
+                        <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+                        
+                        </label>
+
+                </div>
+
+                <div class="containerHW">
+                <div class="inputH">
+                <label for="height">Height(cm)</label>
+                <input type="number" id="height" required>
+                </div>
+
+                <div class="inputW">
+                <label for="weight">Weight(kg)</label>
+                <input type="number" id="weight" required>
+                </div>
+            </div>
+
+                <div class="inputActv" id="inputActv">
+                <p><label for="txtlist">Exercise levels/Activty:
+                    <input required name="Activty" type="text" id="txtlist" placeholder="Basal Metabolic Rate (BMR)" list="Activty">
+                    <datalist id="Activty">
+                        <option id="1">Little/No exercise</option>
+                        <option id="2">Low activity (exercise 1-3 times/week)</option>
+                        <option id="3">Active (daily exercise or intense exercise 3-4 times/week)</option>
+                        <option id="4">High activity (intense exercise 6-7 times/week)</option>
+                        <option id="5">Very high activity (very intense exercise daily, or physical job)</option>
+                    </datalist> 
+                </label></p>
+                </div>
+
+                <button class="calculate" id="submit" onclick="calculate();">Calculate</button>
+                <button class="reset" id="reset" onclick="resetForm();">Reset</button>
+            </div>
+
+            
+            <div class="result">
+                <p>Your BMI is </p>
+                <h1>Your BMR is</h1>
+                <div class="result" id="BMR">0000 kcal/day</div>
+                <div id="result">00.00</div>
+                <p class="comment"></p>
+            </div>
+            
+        </div>
+
+    </div> 
+    <div onclick="Diet()" class="diet">
+        <a href="/dashboard/diet" >
+            <img class="dietPic" src="../img/Green Healthy Diet Meal Plan Nutrition Protocol A4 Document (6).png" alt="">
+        </a>
+    </div>
+</div>

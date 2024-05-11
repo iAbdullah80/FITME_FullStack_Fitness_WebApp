@@ -1,0 +1,132 @@
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    font: 1em sans-serif;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .header .logo {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+    padding-right: 10px;
+    margin-right: 1rem;
+  }
+  
+  .header .logo i {
+    color: #fff;
+    padding: 0.5rem;
+  }
+  
+  .header .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .navbar a {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: #fff;
+  }
+  
+  .header .navbar a:hover {
+    color: #baa6cf;
+  }
+  
+  .header .btn {
+    background: transparent;
+    color: tomato;
+    border: 1px solid tomato;
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .max-Width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 1px 20px;
+    border-radius: 55px;
+    margin-bottom: 8px;
+  }
+  
+  /* Media queries for different screen sizes */
+  @media (max-width: 1200px) {
+    .header {
+      padding: 1rem 4%;
+    }
+  
+    .max-Width {
+      padding: 0 40px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .header .navbar a {
+      font-size: 1rem;
+      margin: 0 0.5rem;
+    }
+  
+    .header .btn {
+      font-size: 10px;
+      padding: 6px;
+    }
+  }
+  
+  .header-hidden {
+    transform: translateY(-100%);
+  }
+  
+  
+  @media (max-width: 500px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.5rem 1rem;
+    }
+  
+    .header .navbar {
+      margin-top: 1rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+    }
+  
+    .header .navbar a {
+      margin: 0 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header .logo {
+      font-size: 18px;
+    }
+  
+    .header .logo i {
+      padding: 0.3rem;
+    }
+  
+    .name {
+      font-size: 16px;
+      padding: 1px 15px;
+    }
+  }
