@@ -1,0 +1,38 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrapper {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 18rem; /* adjust this value as needed */
+    min-width: 15rem; /* adjust this value as needed */
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        width: 50%;
+        max-width: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 20%;
+    }
+}

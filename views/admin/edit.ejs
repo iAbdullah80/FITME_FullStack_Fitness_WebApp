@@ -1,0 +1,26 @@
+<h1>Edit Item</h1>
+<% console.log(item.name) %>
+<form id="editItem-form" autocomplete="off" method="post" action="/admin/dashboard/edit/<%= itemId %>?_method=PUT">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="<%= item.name %>" required><br><br>
+    
+    <label for="weight">Weight:</label>
+    <input type="text" id="weight" name="weight" value="<%= item.weight %>" required><br><br>
+    
+    <label for="calories">Calories:</label>
+    <input type="number" id="calories" name="calories" value=<%= item.calories %> required><br><br>
+    
+    <label for="fat">Fat:</label>
+    <input type="number" step="0.01" id="fat" name="fat" value=<%= item.fat %> required><br><br>
+    
+    <label for="carbs">Carbs:</label>
+    <input type="number" step="0.01" id="carbs" name="carbs" value=<%= item.carbs %> required><br><br>
+    
+    <label for="protein">Protein:</label>
+    <input type="number" step="0.01" id="protein" name="protein" value=<%= item.protein %> required><br><br>
+    
+    <label for="image">Image:</label>
+    <input type="text" id="image" name="image" value="<%= item.image %>" required><br><br>
+    <div id="error-message" style="display: none; color: red;"></div>
+    <input type="submit" value="Edit Item">
+</form>

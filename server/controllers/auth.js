@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
 const User = require('../model/User');
 
-// Register
+// POST /register
 exports.register = async (req, res, next) => {
 
     const { name, email, password } = req.body;
@@ -16,7 +16,7 @@ exports.register = async (req, res, next) => {
     }};
 
 
-// Login
+// POST /login
 exports.login = async (req, res) => {
     const { email, password } = req.body;
     try {
@@ -36,7 +36,7 @@ exports.login = async (req, res) => {
     }
 };
 
-// Logout
+// GET /logout
 exports.logout = async (req, res) => {
     try {
         req.session.destroy();
@@ -46,8 +46,7 @@ exports.logout = async (req, res) => {
     }
 };
 
-// Reset password
-
+// POST /reset-password
 exports.resetPassword = async (req, res) => {
     const { email, password } = req.body;
     try {

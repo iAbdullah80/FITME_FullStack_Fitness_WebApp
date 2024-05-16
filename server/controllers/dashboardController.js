@@ -1,3 +1,5 @@
+const Item = require('../model/foodItem');
+
 exports.dashboard=async(req,res)=>{
     const locals={
         title:'Dashboard',
@@ -102,22 +104,28 @@ exports.diet=async(req,res)=>{
         title:'Diet',
         description:'Diet meals page'
     }
+    const item = await Item.aggregate([
+        { $sort: { updatedAt: 1 } },
+        ]); 
     if (req.session.user){
         res.render('dashboard/diet', {
             userName:req.session.user,
             locals,
+            item,
             layout: '../views/layouts/diet_page'
         })
     } else if(req.user){
         res.render('dashboard/diet', {
             userName:req.user.displayName,
             locals,
+            item,
             layout: '../views/layouts/diet_page'
         })
     }
     else {
         res.render('dashboard/diet', {
             locals,
+            item,
             layout: '../views/layouts/diet_page'
         })
     }

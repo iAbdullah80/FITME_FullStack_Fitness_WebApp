@@ -1,0 +1,44 @@
+<div class="container-fluid container-fluid-custom pb-5 mb-5">
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <h1>Hey, Abdullah</h1>
+        <a href="/admin/dashboard/add" class="btn btn-primary">+ New Meal</a>
+      </div>
+    </div>
+    <div class="row">
+        <% if (item.length > 0) { for(var i=0; i < item.length; i++) { %>
+          <div class="col-sm-2 mb-3 wrapper">
+            <div class="card">
+                <img class="card-img-top" src=<%= item[i].image %> alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><%= item[i].name %></h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Weight: <%= item[i].weight %></li>
+                  <li class="list-group-item">Calories: <%= item[i].calories %></li>
+                  <li class="list-group-item">Fat: <%= item[i].fat %></li>
+                  <li class="list-group-item">Carbs: <%= item[i].carbs %></li>
+                  <li class="list-group-item">Protein: <%= item[i].protein %></li>
+                </ul>
+                <div class="card-body">
+                  <a href="/admin/dashboard/edit/<%= item[i]._id %>" class="card-link">Edit</a>
+                  <a href="/admin/dashboard/delete" class="card-link">Delete</a>
+                </div>
+              </div>
+          </div>
+        <%  }} else { %>
+          <div class="row">
+            <div class="col-3">
+              <img src="https://raw.githubusercontent.com/RaddyTheBrand/Notes-NodeJs-CRUD-MongoDB/8035f76e7b9a106c981fde8ef32dc3cf363260bf/public/img/human-3.svg" alt="Human pointing hand toward a create button">
+            </div>
+            <div class="col mt-md-4">
+              <h2>Okay...</h2>
+              <h4>Let's start with the first meal!<br/><br/>
+                <a href="/admin/dashboard/add">Create one!</a>
+              </h4>
+            </div>
+          </div>
+        <% } %>
+      </div>
+</div>

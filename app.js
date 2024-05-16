@@ -37,6 +37,7 @@ app.use(expressLayouts)
 app.set('layout', './layouts/main')
 app.set('view engine', 'ejs')
 
+app.use(methodOverride('_method'));
 
 // Routes
 app.use('/',require('./server/routes/auth'))
@@ -45,6 +46,7 @@ app.use('/',require('./server/routes/authFacebook'))
 app.use('/',require('./server/routes/authMicrosoft'))
 app.use('/',require('./server/routes/index'))
 app.use('/',require('./server/routes/dashboard'))
+app.use('/',require('./server/routes/admin'))
 
 
 // Handle 404
