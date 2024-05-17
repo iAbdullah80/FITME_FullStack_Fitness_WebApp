@@ -1,5 +1,4 @@
 // GET / homepage
-
 exports.homepage=async(req,res)=>{
 
     const locals={
@@ -26,6 +25,8 @@ exports.homepage=async(req,res)=>{
         })
     }
 }
+
+// GET / SignUp
 exports.signup=async(req,res)=>{
     const locals={
         title:'Sign Up',
@@ -36,6 +37,8 @@ exports.signup=async(req,res)=>{
         layout: '../views/layouts/signup_page'
     })
 }
+
+// GET / SignIn
 exports.signin=async(req,res)=>{
     const locals={
         title:'Sign In',
@@ -46,6 +49,8 @@ exports.signin=async(req,res)=>{
         layout: '../views/layouts/signin_page'
     })
 }
+
+// GET / Reset Password
 exports.reset=async(req,res)=>{
     const locals={
         title:'Reset Password',

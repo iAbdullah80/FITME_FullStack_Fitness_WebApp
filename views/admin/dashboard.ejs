@@ -22,8 +22,10 @@
                   <li class="list-group-item">Protein: <%= item[i].protein %></li>
                 </ul>
                 <div class="card-body">
-                  <a href="/admin/dashboard/edit/<%= item[i]._id %>" class="card-link">Edit</a>
-                  <a href="/admin/dashboard/delete" class="card-link">Delete</a>
+                    <a href="/admin/dashboard/edit/<%= item[i]._id %>" class="btn btn-secondary">Edit</a>
+                    <form method="post" action="/admin/dashboard/delete/<%= item[i]._id %>?_method=DELETE">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
                 </div>
               </div>
           </div>

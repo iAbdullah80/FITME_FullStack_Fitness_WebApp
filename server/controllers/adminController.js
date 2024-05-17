@@ -98,3 +98,15 @@ exports.editItemPut=async(req,res)=>{
         res.status(500).json({ message: 'Internal Server Error, could not update item' });
     }
 }
+
+// DELETE / delete item
+exports.deleteItem=async(req,res)=>{
+    try{
+        await FoodItem.findByIdAndDelete(req.params.id);
+        console.log('Item deleted successfully');
+        res.redirect('/admin/dashboard');
+    }
+    catch(error){
+        res.status(500).json({ message: 'Internal Server Error, could not delete item' });
+    }
+}

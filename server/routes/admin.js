@@ -10,6 +10,7 @@ router.get('/admin/dashboard/add', adminController.addItem)
 router.get('/admin/dashboard/edit/:id', adminController.editItem)
 router.post('/admin/dashboard/add', adminController.addItemPost)
 router.put('/admin/dashboard/edit/:id', adminController.editItemPut)
+router.delete('/admin/dashboard/delete/:id', adminController.deleteItem)
 
 
 

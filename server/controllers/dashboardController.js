@@ -1,5 +1,6 @@
 const Item = require('../model/foodItem');
 
+// GET / dashboard
 exports.dashboard=async(req,res)=>{
     const locals={
         title:'Dashboard',
@@ -24,6 +25,8 @@ exports.dashboard=async(req,res)=>{
         layout: '../views/layouts/dashboard'
     })}
 }
+
+// GET / workouts
 exports.pushDay=async(req,res)=>{
     const locals={
         title:'Push Day',
@@ -99,6 +102,8 @@ exports.legsDay=async(req,res)=>{
         })
     }
 }
+
+// GET / diet
 exports.diet=async(req,res)=>{
     const locals={
         title:'Diet',

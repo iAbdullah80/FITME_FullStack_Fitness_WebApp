@@ -11,5 +11,4 @@ router.get('/signin', authenticated, mainController.signin)
 router.get('/reset', authenticated, mainController.reset)
 
 
-
 module.exports=router
