@@ -1,7 +1,9 @@
 const FoodItem = require('../model/foodItem');
+const User = require('../model/User');
 
 // GET / adminDashboard
 exports.adminDashboard=async(req,res)=>{
+    const name = req.session.user.displayName;
     const item = await FoodItem.aggregate([
         { $sort: { updatedAt: 1 } },
         ]); 
@@ -12,6 +14,7 @@ exports.adminDashboard=async(req,res)=>{
     res.render('admin/dashboard', {
         locals,
         item,
+        name,
         layout: '../views/layouts/admin'
     })
 }
@@ -19,14 +22,37 @@ exports.adminDashboard=async(req,res)=>{
 // GET / adminLogin
 exports.adminLogin=async(req,res)=>{
     const locals={
-        title:'Admin Login',
-        description:'Admin login page'
+        title:'Admin signin',
+        description:'Admin signin page'
     }
-    res.render('admin/login', {
+    res.render('admin/signin', {
         locals,
-        layout: '../views/layouts/admin'
+        layout: '../views/layouts/adminSignin'
     })
 }
+
+// POST / adminLogin
+exports.adminLoginPost = async (req, res) => {
+    const { email, password } = req.body;
+    try {
+        const user = await User.findOne({ email });
+        if (!user) {
+            return res.status(404).json({ message: 'Admin not found' });
+        }
+        const isMatch = await user.comparePassword(password);
+        if (!isMatch) {
+            return res.status(401).json({ message: 'Invalid credentials' });
+        }
+        if (!user.isAdmin) {
+            return res.status(401).json({ message: 'User is not an admin' });
+        }
+
+        req.session.user ={ 'id':user._id, 'displayName': user.name, 'role': user.role};
+        res.status(200).json({ message: 'Admin logged in' });
+    } catch (error) {
+        res.status(500).json({ message: 'Internal Server Error, could not login' });
+    }
+};
 
 // GET / add item
 exports.addItem=async(req,res)=>{

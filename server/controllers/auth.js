@@ -54,6 +54,9 @@ exports.resetPassword = async (req, res) => {
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
+        if (user.isAdmin) {
+            return res.status(401).json({ message: 'Admin password cannot be reset' });
+        }
         await user.updatePassword(password);
         console.log(`User ${user.name} password reset`);
         res.status(200).json({ message: 'Password reset' });

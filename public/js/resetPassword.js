@@ -36,7 +36,10 @@ signupForm.addEventListener('submit', async (event) => {
         setTimeout(() => {
             window.location.href = '/signin';
         }, 3000);
-        } 
+        } else if (response.status === 401) {
+            errorMessage.textContent = 'Admin password cannot be reset.';
+            errorMessage.style.display = 'block';
+        }
     else {
         console.log("Error: ", response);
         window.location.reload();

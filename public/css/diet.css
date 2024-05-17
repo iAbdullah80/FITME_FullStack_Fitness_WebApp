@@ -91,7 +91,7 @@ background-image: linear-gradient(rgb(224, 218, 218), lightblue);
     color: red;
 }
 /*------------------------------*/
-.a1 .Rice p{
+.a1 .item p{
     position: relative;
     top: 180px;
     right: 10%;
@@ -101,379 +101,34 @@ background-image: linear-gradient(rgb(224, 218, 218), lightblue);
     font-family:"Roboto";
     padding: 10px; 
 }
-.a1 .Rice i{
-    display: inline;
-    position: relative;
-    top: 180px;
-    right: 8%;
-
-}
-.a1 .Rice .redot{
-    position: absolute;
-    top: 22px;
-    left: 27%;
-    color: red;
-    font-size: 15px;
-}
-.a1 .Rice .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 222px;
-    color: rgb(245, 245, 55);
-    font-size: 15px;
-}
-.a1 .Rice .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 322px;
-    color:greenyellow;
-    font-size: 15px;
-}
-/*------------------------------*/
-.a1 .chicken p{
-    position: relative;
-    top: 180px;
-    right: 10%;
-    display: inline;
-    color: black;
-    font-size:5 rem;
-    font-family:"Roboto";
-    padding: 10px; 
-}
-.a1 .chicken i{
-    display: inline;
-    position: relative;
-    top: 180px;
-    right: 8%;
-
-}
-.a1 .chicken .redot{
-    position: absolute;
-    top: 22px;
-    left: 29%;
-    color: red;
-    font-size: 15px;
-}
-.a1 .chicken .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 224px;
-    color: rgb(245, 245, 55);
-    font-size: 15px;
-}
-.a1 .chicken .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 332px;
-    color:greenyellow;
-    font-size: 15px;
-}
-/*------------------------------*/
-.a1 .Steak p{
-    position: relative;
-    top: 180px;
-    right: 10%;
-    display: inline;
-    color: black;
-    font-size:5 rem;
-    font-family:"Roboto";
-    padding: 10px; 
-}
-.a1 .Steak i{
+.a1 .item i{
     display: inline;
     position: relative;
     top: 180px;
     right: 8%;
 }
-.a1 .Steak .redot{
+.a1 .item .redot{
     position: absolute;
     top: 22px;
-    left: 28%;
+    left: 23.5%;
     color: red;
     font-size: 15px;
 }
-.a1 .Steak .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 218px;
-    color: rgb(245, 245, 55);
-    font-size: 15px;
-}
-.a1 .Steak .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 328px;
-    color:greenyellow;
-    font-size: 15px;
-}
-/*------------------------------*/
-.a1 .egg p{
-    position: relative;
-    top: 180px;
-    right: 10%;
-    display: inline;
-    color: black;
-    font-size:5 rem;
-    font-family:"Roboto";
-    padding: 10px; 
-}
-.a1 .egg i{
-    display: inline;
-    position: relative;
-    top: 180px;
-    right: 8%;
-}
-.a1 .egg .redot{
-    position: absolute;
-    top: 22px;
-    left: 28%;
-    color: red;
-    font-size: 15px;
-}
-.a1 .egg .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 218px;
-    color: rgb(245, 245, 55);
-    font-size: 15px;
-}
-.a1 .egg .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 322px;
-    color:greenyellow;
-    font-size: 15px;
-}
-/*------------------------------*/
-.a1 .fish p{
-    position: relative;
-    top: 180px;
-    right: 10%;
-    display: inline;
-    color: black;
-    font-size:5 rem;
-    font-family:"Roboto";
-    padding: 10px; 
-}
-.a1 .fish i{
-    display: inline;
-    position: relative;
-    top: 180px;
-    right: 8%;
-}
-.a1 .fish .redot{
-    position: absolute;
-    top: 22px;
-    left: 27%;
-    color: red;
-    font-size: 15px;
-}
-.a1 .fish .yellowDot{
+.a1 .item .yellowDot{
     position: absolute;
     top: 22px;
     left: 215px;
     color: rgb(245, 245, 55);
     font-size: 15px;
 }
-.a1 .fish .greenDot{
+.a1 .item .greenDot{
     position: absolute;
     top: 22px;
-    left: 322px;
-    color:greenyellow;
-    font-size: 15px;
-}
-/*------------------------------*/
-.a1 .Pasta p{
-    position: relative;
-    top: 180px;
-    right: 10%;
-    display: inline;
-    color: black;
-    font-size:5 rem;
-    font-family:"Roboto";
-    padding: 10px; 
-}
-.a1 .Pasta i{
-    display: inline;
-    position: relative;
-    top: 180px;
-    right: 8%;
-}
-.a1 .Pasta .redot{
-    position: absolute;
-    top: 22px;
-    left: 27%;
-    color: red;
-    font-size: 15px;
-}
-.a1 .Pasta .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 222px;
-    color: rgb(245, 245, 55);
-    font-size: 15px;
-}
-.a1 .Pasta .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 322px;
-    color:greenyellow;
-    font-size: 15px;
-}
-/*------------------------------*/
-.a1 .Milk p{
-    position: relative;
-    top: 180px;
-    right: 10%;
-    display: inline;
-    color: black;
-    font-size:5 rem;
-    font-family:"Roboto";
-    padding: 10px; 
-}
-.a1 .Milk i{
-    display: inline;
-    position: relative;
-    top: 180px;
-    right: 8%;
-}
-.a1 .Milk .redot{
-    position: absolute;
-    top: 22px;
-    left: 27%;
-    color: red;
-    font-size: 15px;
-}
-.a1 .Milk .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 222px;
-    color: rgb(245, 245, 55);
-    font-size: 15px;
-}
-.a1 .Milk .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 322px;
-    color:greenyellow;
-    font-size: 15px;
-}
-/*------------------------------*/
-.a1 .Oat p{
-    position: relative;
-    top: 180px;
-    right: 10%;
-    display: inline;
-    color: black;
-    font-size:5 rem;
-    font-family:"Roboto";
-    padding: 10px; 
-}
-.a1 .Oat i{
-    display: inline;
-    position: relative;
-    top: 180px;
-    right: 8%;
-}
-.a1 .Oat .redot{
-    position: absolute;
-    top: 22px;
-    left: 24%;
-    color: red;
-    font-size: 15px;
-}
-.a1 .Oat .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 230px;
-    color: rgb(245, 245, 55);
-    font-size: 15px;
-}
-.a1 .Oat .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 360px;
-    color:greenyellow;
-    font-size: 15px;
-}
-/*------------------------------*/
-.a1 .Tuna p{
-    position: relative;
-    top: 180px;
-    right: 10%;
-    display: inline;
-    color: black;
-    font-size:5 rem;
-    font-family:"Roboto";
-    padding: 10px; 
-}
-.a1 .Tuna i{
-    display: inline;
-    position: relative;
-    top: 180px;
-    right: 8%;
-}
-.a1 .Tuna .redot{
-    position: absolute;
-    top: 22px;
-    left: 29%;
-    color: red;
-    font-size: 15px;
-}
-.a1 .Tuna .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 225px;
-    color: rgb(245, 245, 55);
-    font-size: 15px;
-}
-.a1 .Tuna .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 332px;
-    color:greenyellow;
-    font-size: 15px;
-}
-/*------------------------------*/
-.a1 .Salomn p{
-    position: relative;
-    top: 180px;
-    right: 10%;
-    display: inline;
-    color: black;
-    font-size:5 rem;
-    font-family:"Roboto";
-    padding: 10px; 
-}
-.a1 .Salomn i{
-    display: inline;
-    position: relative;
-    top: 180px;
-    right: 8%;
-}
-.a1 .Salomn .redot{
-    position: absolute;
-    top: 22px;
-    left: 28%;
-    color: red;
-    font-size: 15px;
-}
-.a1 .Salomn .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 218px;
-    color: rgb(245, 245, 55);
-    font-size: 15px;
-}
-.a1 .Salomn .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 347px;
+    left: 68%;
     color:greenyellow;
     font-size: 15px;
 }
 .a1 .food{
-    background-image: url("../img/ChineseNewYearInstagramBestMenuPost.png")no-repeat;
     position: absolute;
     top: 20px;
     right:2%;

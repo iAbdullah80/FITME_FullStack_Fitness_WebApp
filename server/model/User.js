@@ -55,6 +55,11 @@ userSchema.methods.updatePassword = async function(password){
     }
 }
 
+// is user an admin
+userSchema.methods.isAdmin = function(){
+    return this.role === 'admin'
+}
+
 const User = mongoose.model('User', userSchema)
 
 module.exports = User

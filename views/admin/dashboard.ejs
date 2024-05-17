@@ -1,10 +1,10 @@
 <div class="container-fluid container-fluid-custom pb-5 mb-5">
-
     <div class="row mb-4">
-      <div class="col-12">
-        <h1>Hey, Abdullah</h1>
-        <a href="/admin/dashboard/add" class="btn btn-primary">+ New Meal</a>
-      </div>
+        <div class="col-12">
+            <h1>Hey, <%= name %></h1>
+            <a href="/admin/dashboard/add" class="btn btn-primary">+ New Meal</a>
+            <a href="/logout" class="btn btn-danger float-right">Logout</a> <!-- Added logout button -->
+        </div>
     </div>
     <div class="row">
         <% if (item.length > 0) { for(var i=0; i < item.length; i++) { %>
@@ -23,7 +23,7 @@
                 </ul>
                 <div class="card-body">
                     <a href="/admin/dashboard/edit/<%= item[i]._id %>" class="btn btn-secondary">Edit</a>
-                    <form method="post" action="/admin/dashboard/delete/<%= item[i]._id %>?_method=DELETE">
+                    <form method="post" action="/admin/dashboard/delete/<%= item[i]._id %>?_method=DELETE" onsubmit="return confirm('Are you sure you want to delete this item?');">
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
                 </div>
