@@ -94,7 +94,7 @@ background-image: linear-gradient(rgb(224, 218, 218), lightblue);
 .a1 .item p{
     position: relative;
     top: 180px;
-    right: 10%;
+    right: 8%;
     display: inline;
     color: black;
     font-size:5 rem;
@@ -104,27 +104,25 @@ background-image: linear-gradient(rgb(224, 218, 218), lightblue);
 .a1 .item i{
     display: inline;
     position: relative;
-    top: 180px;
+    top: 181px;
     right: 8%;
 }
 .a1 .item .redot{
-    position: absolute;
-    top: 22px;
-    left: 23.5%;
+    position: relative;
+    display: inline;
+    
     color: red;
     font-size: 15px;
 }
 .a1 .item .yellowDot{
-    position: absolute;
-    top: 22px;
-    left: 215px;
+    position: relative;
+    display: inline;
     color: rgb(245, 245, 55);
     font-size: 15px;
 }
 .a1 .item .greenDot{
-    position: absolute;
-    top: 22px;
-    left: 68%;
+    position: relative;
+    display: inline;
     color:greenyellow;
     font-size: 15px;
 }
