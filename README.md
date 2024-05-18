@@ -6,6 +6,10 @@ This is a full-stack web application built for the CS346 course. The front-end i
 
 This website is a fitness and health application called FITME that provides users with a platform to manage their fitness goals and maintain a healthy lifestyle. One of the key features of this application is its user authentication system, which allows users to create an account and log in using either local credentials (email and password) or their existing social media accounts (Google, Facebook, and Microsoft).
 
+## Flow Chart
+
+![Flowchart](public/img/web_project_flowChart.png)
+
 **Local Login**
 Users can create a new account by providing their email address and setting a secure password.
 
