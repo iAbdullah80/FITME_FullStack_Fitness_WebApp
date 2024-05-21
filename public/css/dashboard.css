@@ -294,7 +294,7 @@ font-weight: 600;
 font-size: 20px;
 color: #000;
 position:relative;
-left:37% ;
+left:25% ;
 margin:0;
 padding:0;
 }
@@ -302,7 +302,8 @@ padding:0;
 font-weight: 600;
 font-size: 20px;
 color: #000;
-position:absolute;
+position:relative;
+float: left;
 margin:0;
 padding:0;
 }
@@ -443,7 +444,7 @@ padding-top: 300px;
         
     .box {
         width: 100%;
-        height: 610px;
+        height: 650px;
     }
     .workout {
         width: 70%;
@@ -480,8 +481,13 @@ padding-top: 300px;
     button.reset {
         width: 30%;
     }
+    .result p{
+        right: 10%;
+        left: 27%;
+    }
     .result h1 {
-        left: 30%;
+        left: 5%;
+        
     }
     .result #BMR {
         left: 150px;
@@ -497,10 +503,13 @@ padding-top: 300px;
 @media screen and (max-width: 740px) {
     .box {
         width: 100%;
+        height: 650px;
     }
     .workout {
         width: 100%;
         left: 2%;
+        margin-right: 0;
+        margin-left: 0;
     }
     .workout .workoutPic {
         width: 100%;
@@ -508,12 +517,17 @@ padding-top: 300px;
     .diet {
         width: 100%;
         left: 2%;
+        margin-right: 0;
+        margin-left: 0;
     }
     .diet .dietPic {
         width: 100%;
     }
     .data {
+        margin-top: 25%;
         width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
     .input input {
         width: 60%;
@@ -533,8 +547,13 @@ padding-top: 300px;
     button.reset {
         width: 30%;
     }
+    .result p{
+        right: 0;
+        left: 0;
+    }
     .result h1 {
-        left: 30%;
+       right: 0;
+        left: 0;
     }
     .result #BMR {
         left: 150px;
