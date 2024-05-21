@@ -16,8 +16,8 @@ body{
     justify-content: center;
     align-items: center;
     background:url('../img/GiveUp2.png');
-    background-size: cover; 
-    background-position: center;
+
+    background-size: 100% 100%;
     min-height: 100vh;                     
 }
 
@@ -82,3 +82,34 @@ width: 100%;
 height: 100%;
 
 }
+
+
+/* Media Query for iPhone size */
+@media only screen and (min-height: 810px) {
+    .home .max-Width{
+        margin-top: 200px;
+        flex-direction: column;
+    }
+    .home .home-content{
+        
+        width: 100%;
+    }
+    .home .home-image{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .home .max-Width{
+        flex-direction: column;
+    }
+    .home .home-content{
+        
+        width: 90%;
+    }
+    .home .home-image{
+        width: 100%;
+    }
+}
+

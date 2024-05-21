@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
@@ -9,44 +9,45 @@
     text-transform: capitalize;
     font-family: "poppins", sans-serif;
 }
-body{
+
+body {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url('../img/GiveUp.png')no-repeat;
-    background-size: cover; 
-    background-position: center;
-                
-}
-.wrapper {
-  background-color: #FFFF;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 5px black;
-  position: relative;
-  width: 480px;
-  height: auto;
-  left:20%;
-  top: 200px;
-  border-radius: 10px;
-  padding: 30px 40px;
+    background: url('../img/GiveUp.png') no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
-.wrapper h2{
-    padding-top:0px;
+.wrapper {
+    background-color: #ffff;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px black;
+    position: relative;
+    width: 480px;
+    height: auto;
+    left: 5%;
+    top: 200px;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.wrapper h2 {
+    padding-top: 0px;
     font-size: 35px;
     text-align: center;
 }
 
-.wrapper .input-box{
+.wrapper .input-box {
     position: relative;
     width: 100%;
     height: 50px;
-    margin: 30 px 0;
+    margin: 30px 0;
 }
-.input-box input{
 
+.input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -59,81 +60,109 @@ body{
     text-transform: none;
     padding: 20px 45px 20px 20px;
 }
-.input-box input::placeholder{
+
+.input-box input::placeholder {
     color: white;
 }
 
-.input-box i{
+.input-box i {
     position: absolute;
-    right:20px ;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
 }
 
-.wrapper .remmber-forgot{
+.wrapper .remmber-forgot {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
 
-.remmber-forgot a{
+.remmber-forgot a {
     color: white;
     text-decoration: none;
 }
-.remmber-forgot a:hover{
+
+.remmber-forgot a:hover {
     text-decoration: underline;
 }
 
-.wrapper .btn{
- width: 100%;
- height: 45px;
- background: white;
- border: none;
- outline: none;
- border-radius: 40px;
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- cursor: pointer;
- font-size: 16px;
- color: #333;
- font-weight: 600;
-
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
 }
 
-.wrapper .register-link{
+.wrapper .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
-
 }
-.register-link p a{
+
+.register-link p a {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
-.register-link p a:hover{
-    
+
+.register-link p a:hover {
     text-decoration: underline;
-    
 }
 
-.signUpWith{
+.signUpWith {
     text-align: center;
-    
-
 }
-.signUpWith i{
+
+.signUpWith i {
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
-.signUpWith ion-icon{
+
+.signUpWith ion-icon {
     color: white;
     font-size: 30px;
     padding-left: 14px;
     padding-top: 5px;
 }
-.input-box{
+
+.input-box {
     margin: 10px 0;
+}
+
+/* Media Query for iPhone size */
+@media only screen and (min-height: 810px) {
+    .wrapper {
+       
+        left: 5%;
+        top: 350px;
+    }
+}
+
+/* Media Query for iPhone size */
+@media only screen and (max-width: 500px) {
+    .wrapper {
+        width: 90%;
+        left: 5%;
+        top: 200px;
+    }
+}
+
+/* Media Query for iPhone size */
+@media only screen and (max-width: 375px) {
+    .wrapper {
+        width: 90%;
+        left: 5%;
+        top: 200px;
+    }
 }
