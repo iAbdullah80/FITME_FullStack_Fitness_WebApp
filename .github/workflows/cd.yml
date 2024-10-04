@@ -25,7 +25,7 @@ jobs:
         port: 22
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          docker exec -it 915c bash-c "
+          docker exec -it 915c bash -c "
             git pull origin main &&
             git status &&
             npm install --only=prod
