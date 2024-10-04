@@ -29,4 +29,3 @@ jobs:
           git pull origin main
           git status
           npm install --only=prod
-          pm2 restart FITME_FullStack_Fitness_WebApp
