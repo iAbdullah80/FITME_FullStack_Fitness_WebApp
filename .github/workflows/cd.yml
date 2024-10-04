@@ -29,5 +29,5 @@ jobs:
             git pull origin main &&
             git status &&
             npm install --only=prod
-            exit
           "
+          echo "Deployed!"
