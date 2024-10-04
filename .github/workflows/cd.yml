@@ -25,7 +25,8 @@ jobs:
         port: 22
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          cd ~/FITME_FullStack_Fitness_WebApp
+          docker exec -it 915c bash
           git pull origin main
           git status
           npm install --only=prod
+          exit
