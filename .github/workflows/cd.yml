@@ -25,9 +25,11 @@ jobs:
         port: 22
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          docker exec -i 915c bash -c "
-            git pull origin main &&
-            git status &&
-            npm install --only=prod
-          "
+          docker stop $(docker ps -a -q)
+          docker rm $(docker ps -a -q)
+          cd ~/FITME_FullStack_Fitness_WebApp
+          git pull origin main
+          git status
+          docker build -t my-app:cd .
+          docker run -d -p 80:5000 my-app:cd
           echo "Deployed!"
