@@ -24,7 +24,7 @@ jobs:
         port: 22
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          dcd ~/FITME_FullStack_Fitness_WebApp
+          cd ~/FITME_FullStack_Fitness_WebApp
           git pull origin main
           git status
           docker build -t my-app:cd .
