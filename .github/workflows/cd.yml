@@ -24,11 +24,12 @@ jobs:
         port: 22
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          docker stop $(docker ps -a -q)
-          docker rm $(docker ps -a -q)
-          cd ~/FITME_FullStack_Fitness_WebApp
+          dcd ~/FITME_FullStack_Fitness_WebApp
           git pull origin main
           git status
           docker build -t my-app:cd .
+          docker stop $(docker ps -a -q)
+          docker rm $(docker ps -a -q)
           docker run -d -p 80:5000 my-app:cd
+          docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
           echo "Deployed!"
