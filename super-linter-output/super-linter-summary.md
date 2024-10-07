@@ -1,10 +1,23 @@
 # Super-linter summary
 
-| Language       | Validation result |
-| -------------- | ----------------- |
-| GITHUB_ACTIONS | Pass ✅           |
-| GITLEAKS       | Pass ✅           |
-| YAML           | Fail ❌           |
-| YAML_PRETTIER  | Pass ✅           |
+| Language            | Validation result |
+| ------------------- | ----------------- |
+| CHECKOV             | Fail ❌           |
+| CSS                 | Fail ❌           |
+| CSS_PRETTIER        | Fail ❌           |
+| DOCKERFILE_HADOLINT | Pass ✅           |
+| GITHUB_ACTIONS      | Fail ❌           |
+| GITLEAKS            | Pass ✅           |
+| JAVASCRIPT_ES       | Pass ✅           |
+| JAVASCRIPT_PRETTIER | Fail ❌           |
+| JAVASCRIPT_STANDARD | Fail ❌           |
+| JSCPD               | Fail ❌           |
+| JSON                | Pass ✅           |
+| JSON_PRETTIER       | Fail ❌           |
+| MARKDOWN            | Fail ❌           |
+| MARKDOWN_PRETTIER   | Fail ❌           |
+| NATURAL_LANGUAGE    | Fail ❌           |
+| YAML                | Pass ✅           |
+| YAML_PRETTIER       | Fail ❌           |
 
 Super-linter detected linting errors
