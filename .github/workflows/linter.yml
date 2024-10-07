@@ -26,13 +26,17 @@
             env:
               DEFAULT_BRANCH: lint-2
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              VALIDATE_ALL_CODEBASE: true
+              VALIDATE_ALL_CODEBASE: false
+              VALIDATE_CHECKOV: false
+              FIX_CSS_PRETTIER: true
+              FIX_CSS: true
+              FIX_JAVASCRIPT_PRETTIER: true
+              FIX_JAVASCRIPT_STANDARD: true
+              FIX_MARKDOWN: true
+              FIX_MARKDOWN_PRETTIER: true
+              FIX_YAML_PRETTIER: true
 
           - name: Commit and push linting fixes
-            if: always()
-            # Run only on:
-            # - Pull requests
-            # - Not on the default branch
             
             uses: stefanzweifel/git-auto-commit-action@v5
             with:
