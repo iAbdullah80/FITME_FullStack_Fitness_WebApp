@@ -26,18 +26,8 @@ jobs:
         env:
             DEFAULT_BRANCH: lint-2
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            VALIDATE_ALL_CODEBASE: false
-            VALIDATE_CHECKOV: false
-            VALIDATE_JSCPD: false
-            IGNORE_GITIGNORED_FILES	: true
-            FIX_CSS_PRETTIER: true
-            FIX_CSS: true
-            FIX_JAVASCRIPT_PRETTIER: true
-            FIX_JAVASCRIPT_STANDARD: true
-            FIX_MARKDOWN: true
-            FIX_MARKDOWN_PRETTIER: true
-            FIX_YAML_PRETTIER: true
-            FIX_JSON_PRETTIER: true
+            VALIDATE_ALL_CODEBASE: true
+            
 
       - name: Commit and push linting fixes
         if: always()
