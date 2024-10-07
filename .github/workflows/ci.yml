@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ lint ]
+    branches: [ lint-2 ]
 
 jobs:
   # build:
@@ -36,5 +36,5 @@ jobs:
       uses: github/super-linter@v7
       env:
         VALIDATE_ALL_CODEBASE: true
-        DEFAULT_BRANCH: lint
+        DEFAULT_BRANCH: lint-2
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
