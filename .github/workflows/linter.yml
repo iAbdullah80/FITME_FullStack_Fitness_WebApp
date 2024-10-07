@@ -29,6 +29,7 @@
               VALIDATE_ALL_CODEBASE: true
 
           - name: Commit and push linting fixes
+            if: always()
             # Run only on:
             # - Pull requests
             # - Not on the default branch
