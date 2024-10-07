@@ -28,6 +28,7 @@
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               VALIDATE_ALL_CODEBASE: false
               VALIDATE_CHECKOV: false
+              VALIDATE_JSCPD: false
               FIX_CSS_PRETTIER: true
               FIX_CSS: true
               FIX_JAVASCRIPT_PRETTIER: true
@@ -35,8 +36,10 @@
               FIX_MARKDOWN: true
               FIX_MARKDOWN_PRETTIER: true
               FIX_YAML_PRETTIER: true
+              FIX_JSON_PRETTIER: true
 
           - name: Commit and push linting fixes
+            if: always()
             
             uses: stefanzweifel/git-auto-commit-action@v5
             with:
