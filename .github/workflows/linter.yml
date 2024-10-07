@@ -3,7 +3,7 @@ name: Lint
 
 on: # yamllint disable-line rule:truthy
     push:
-    branches:
+      branches:
         - lint-2
 
 permissions:
