@@ -16,6 +16,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
             fetch-depth: 0
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+            node-version: '18' # or the version your project uses
+        
       - name: Super-Linter
         uses: github/super-linter@v7
         env:
