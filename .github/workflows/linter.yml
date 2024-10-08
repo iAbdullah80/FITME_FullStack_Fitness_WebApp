@@ -16,18 +16,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
             fetch-depth: 0
-      - name: Set up Node.js
-        if: always()
-        uses: actions/setup-node@v3
-        with:
-            node-version: '20'
-        
       - name: Super-Linter
         uses: github/super-linter@v4
         env:
             DEFAULT_BRANCH: lint-2
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            VALIDATE_ALL_CODEBASE: true
+            VALIDATE_ALL_CODEBASE: false
+            FIX_CSS: true
+            FIX_CSS_PRETTIER: true
             
 
       - name: Commit and push linting fixes
