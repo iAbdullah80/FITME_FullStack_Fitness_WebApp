@@ -9,7 +9,7 @@
 | GITHUB_ACTIONS      | Fail ❌           |
 | GITLEAKS            | Pass ✅           |
 | JAVASCRIPT_ES       | Pass ✅           |
-| JAVASCRIPT_PRETTIER | Fail ❌           |
+| JAVASCRIPT_PRETTIER | Pass ✅           |
 | JAVASCRIPT_STANDARD | Fail ❌           |
 | JSCPD               | Fail ❌           |
 | JSON                | Pass ✅           |
