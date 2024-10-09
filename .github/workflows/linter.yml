@@ -21,7 +21,6 @@ jobs:
         env:
             DEFAULT_BRANCH: lint-2
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            VALIDATE_ALL_CODEBASE: false
             FIX_CSS: true
             FIX_CSS_PRETTIER: true
             
