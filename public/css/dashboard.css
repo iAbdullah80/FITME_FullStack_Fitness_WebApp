@@ -1,568 +1,586 @@
 /* Import Google Font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
-    margin-top: auto;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: 0.2s linear;
-    text-transform: capitalize;
-    font-family: "poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin-top: auto;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+  font-family: poppins, sans-serif;
 }
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(rgb(224, 218, 218), lightblue);
-    background-attachment: fixed;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgb(224 218 218), lightblue);
+  background-attachment: fixed;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.data{
-margin-top: 20px;
-position: absolute;
-height: 80%;
-width: 90%;
-display: block;
-flex-wrap: wrap;
-
-}
-.workout{
-position: relative;
-width: 500px;
-background: #fafafa;
-border-radius: 12px;
-box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
-height: 250px;
-float: inline-end;
-margin: 10px;
-border-top: 25px solid lightgray;
-
-}
-.date p{
-position: absolute;
-left: 8%;
-top: 19px;
-padding: 10px 70px 0 0 ;
-color: #fff;
-font-weight: bold;
-font-size: 22px;
-font-family: Courier, monospace;
+.data {
+  margin-top: 20px;
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  display: block;
+  flex-wrap: wrap;
 }
 
-.workoutDay p{
-position: absolute;
-left: 43%;
-top: 140px;
-padding: 10px 70px 0 0 ;
-color: #fff;
-font-weight: bold;
-font-size: 22px;
-font-family: Courier, monospace;
+.workout {
+  position: relative;
+  width: 500px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 2px 2px 20px 5px rgb(0 0 0 / 50%);
+  height: 250px;
+  float: inline-end;
+  margin: 10px;
+  border-top: 25px solid lightgray;
 }
 
-.workout .workoutPic{
-position: absolute;
-left: 0%;
-top: 0px;
-background-size: cover;
-background-position: center;
-width: 500px;
-height: 225px;
-border-radius:0 0 12px 12px;
-
+.date p {
+  position: absolute;
+  left: 8%;
+  top: 19px;
+  padding: 10px 70px 0 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Courier, monospace;
 }
 
-.diet{
-position: relative; 
-float: right;
-margin: 10px;
-width: 500px;
-background: #fafafa;
-border-radius: 12px;
-text-align: center;
-box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
-height: 250px;
-
-border-top: 25px solid rgb(176, 237, 176);      
+.workoutDay p {
+  position: absolute;
+  left: 43%;
+  top: 140px;
+  padding: 10px 70px 0 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Courier, monospace;
 }
 
-.diet .dietPic{
-background-size: cover;
-background-position: center;
-width: 500px;
-height: 225px;
-border-radius:0 0 12px 12px;
-}
-.diet p{
-font-family: Courier, monospace;
-font-size: 22px;
-text-align: center;
-font-weight: 500;
-padding: 80px 0 ;
+.workout .workoutPic {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 225px;
+  border-radius: 0 0 12px 12px;
 }
 
+.diet {
+  position: relative;
+  float: right;
+  margin: 10px;
+  width: 500px;
+  background: #fafafa;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgb(0 0 0 / 50%);
+  height: 250px;
+  border-top: 25px solid rgb(176 237 176);
+}
+
+.diet .dietPic {
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 225px;
+  border-radius: 0 0 12px 12px;
+}
+
+.diet p {
+  font-family: Courier, monospace;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  padding: 80px 0;
+}
 
 .workout:hover,
 .diet:hover {
-transform: scale(1.05);
-z-index: 1;
-box-shadow: 4px 4px 30px 10px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 4px 4px 30px 10px rgb(0 0 0 / 70%);
 }
 
 .box {
-float: left;
-margin: 5px;
-
-width: 510px;
-background: #fafafa;
-border-radius: 12px;
-text-align: center;
-box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
-height: 590px;
-position: relative;
-border-top: 25px solid lightblue;
-
+  float: left;
+  margin: 5px;
+  width: 510px;
+  background: #fafafa;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgb(0 0 0 / 50%);
+  height: 590px;
+  position: relative;
+  border-top: 25px solid lightblue;
 }
-
 
 h1 {
-color: rgb(0, 0, 0, 0.7);
-font-weight: bold;
-font-size: 30px;
-padding: 30px 0;
-
+  color: rgb(0 0 0 / 70%);
+  font-weight: bold;
+  font-size: 30px;
+  padding: 30px 0;
 }
-
 
 .input {
-background: #fff;
-box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
-border-radius: 12px;
-padding: 5px 0;
-margin-bottom: 5px;
+  background: #fff;
+  box-shadow: 0 0 95px -30px rgb(0 0 0 / 15%);
+  border-radius: 12px;
+  padding: 5px 0;
+  margin-bottom: 5px;
 }
-
 
 .input label {
-display: block;
-font-size: 15px;
-font-weight: 600;
-color: #000;
-margin-bottom: 5px;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
 }
+
 .input input {
-outline: none;
-border: none;
-border-bottom: 1px solid #4f7df9;
-width: 40%;
-text-align: center;
-font-size: 24px;
-font-family: "Nunito", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 40%;
+  text-align: center;
+  font-size: 24px;
+  font-family: Nunito, sans-serif;
 }
-
-
 
 .inputW {
-background: #fff;
-box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
-border-radius: 12px;
-padding: 5px 0;
-margin-bottom: 8px;
+  background: #fff;
+  box-shadow: 0 0 95px -30px rgb(0 0 0 / 15%);
+  border-radius: 12px;
+  padding: 5px 0;
+  margin-bottom: 8px;
 }
-
 
 .inputW label {
-display: block;
-font-size: 15px;
-font-weight: 600;
-color: #000;
-margin-bottom: 8px;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 8px;
 }
+
 .inputW input {
-outline: none;
-border: none;
-border-bottom: 1px solid #4f7df9;
-width: 40%;
-text-align: center;
-font-size: 24px;
-font-family: "Nunito", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 40%;
+  text-align: center;
+  font-size: 24px;
+  font-family: Nunito, sans-serif;
 }
 
 .inputH {
-background: #fff;
-box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
-border-radius: 12px;
-padding: 5px 0;
-margin-bottom: 5px;
-margin-right: 5px;
+  background: #fff;
+  box-shadow: 0 0 95px -30px rgb(0 0 0 / 15%);
+  border-radius: 12px;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
-
 
 .inputH label {
-display: block;
-font-size: 15px;
-font-weight: 600;
-color: #000;
-margin-bottom: 5px;
-}
-.inputH input {
-outline: none;
-border: none;
-border-bottom: 1px solid #4f7df9;
-width: 40%;
-text-align: center;
-font-size: 24px;
-font-family: "Nunito", sans-serif;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
 }
 
-.inputActv{
-background: #fff;
-box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
-border-radius: 12px;
-padding: 5px 0;
-margin-bottom: 5px;
+.inputH input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 40%;
+  text-align: center;
+  font-size: 24px;
+  font-family: Nunito, sans-serif;
+}
+
+.inputActv {
+  background: #fff;
+  box-shadow: 0 0 95px -30px rgb(0 0 0 / 15%);
+  border-radius: 12px;
+  padding: 5px 0;
+  margin-bottom: 5px;
 }
 
 .inputActv label {
-display: block;
-font-size: 15px;
-font-weight: 600;
-color: #000;
-margin-bottom: 5px;
-}
-.inputActv input {
-outline: none;
-border: none;
-border-bottom: 1px solid #4f7df9;
-width: 40%;
-text-align: center;
-font-size: 13px;
-font-family: "Nunito", sans-serif;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
 }
 
+.inputActv input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 40%;
+  text-align: center;
+  font-size: 13px;
+  font-family: Nunito, sans-serif;
+}
 
 button.calculate {
-position: relative;
-right: 2%;
-cursor: pointer;
-font-family: "Nunito", sans-serif;
-color: #fff;
-background: rgb(97,138,254,1);
-font-size: 15px;
-border-radius: 7px;
-padding: 15px 0;
-width: 40%;
-outline: none;
-border: none;
-transition: all 0.5s;
+  position: relative;
+  right: 2%;
+  cursor: pointer;
+  font-family: Nunito, sans-serif;
+  color: #fff;
+  background: rgb(97 138 254 / 100%);
+  font-size: 15px;
+  border-radius: 7px;
+  padding: 15px 0;
+  width: 40%;
+  outline: none;
+  border: none;
+  transition: all 0.5s;
 }
+
 button.calculate:hover {
-background: #0044ff;
+  background: #04f;
 }
+
 button.reset {
-position: relative;
-left: 2%;
-cursor: pointer;
-font-family: "Nunito", sans-serif;
-color: #fff;
-background: rgb(97,138,254,1);
-font-size: 15px;
-border-radius: 7px;
-padding: 15px 0;
-width: 40%;
-outline: none;
-border: none;
-transition: all 0.5s;
+  position: relative;
+  left: 2%;
+  cursor: pointer;
+  font-family: Nunito, sans-serif;
+  color: #fff;
+  background: rgb(97 138 254 / 100%);
+  font-size: 15px;
+  border-radius: 7px;
+  padding: 15px 0;
+  width: 40%;
+  outline: none;
+  border: none;
+  transition: all 0.5s;
 }
+
 button.reset:hover {
-background: #0044ff;
+  background: #04f;
 }
-
-
 
 .result {
-
-padding: 1px 20px;
+  padding: 1px 20px;
 }
+
 .result h1 {
-font-weight: 600;
-font-size: 20px;
-color: #000;
-position:relative;
-left:25% ;
-margin:0;
-padding:0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  position: relative;
+  left: 25%;
+  margin: 0;
+  padding: 0;
 }
+
 .result p {
-font-weight: 600;
-font-size: 20px;
-color: #000;
-position:relative;
-float: left;
-margin:0;
-padding:0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
+
 .result #BMR {
-position: relative;
-left: 210px;
-padding: 0;
-font-size: 20px;
-font-weight: 900;
-color: #4f7df9;
-background-color: #eaeaea;
-display: inline-block;
-padding: 1px 20px;
-border-radius: 55px;
-margin-bottom: 8px; 
+  position: relative;
+  left: 210px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #4f7df9;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 1px 20px;
+  border-radius: 55px;
+  margin-bottom: 8px;
 }
+
 .result #result {
-position: relative;
-right: 250px;
-padding: 0;
-font-size: 20px;
-font-weight: 900;
-color: #4f7df9;
-background-color: #eaeaea;
-display: inline-block;
-padding: 1px 20px;
-border-radius: 55px;
-margin-bottom: 8px; 
+  position: relative;
+  right: 250px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #4f7df9;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 1px 20px;
+  border-radius: 55px;
+  margin-bottom: 8px;
 }
+
 #comment {
-
-color: #4f7df9;
-font-weight: 800;
-align-items: center;
-
+  color: #4f7df9;
+  font-weight: 800;
+  align-items: center;
 }
 
 .comment {
-position: relative;
-left: 10%;
-width: 400px;  
-display:none;
-border: dashed 1px;
-border-radius: 7px;
-padding: 3px;
-
+  position: relative;
+  left: 10%;
+  width: 400px;
+  display: none;
+  border: dashed 1px;
+  border-radius: 7px;
+  padding: 3px;
 }
 
 .gender {
-display: flex;
-justify-content: space-around;
-align-items: center;
-align-content: center;
-background: #fff;
-box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
-border-radius: 12px;
-padding: 5px 0;
-margin-bottom: 5px;
+  display: flex;
+  place-content: center space-around;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 95px -30px rgb(0 0 0 / 15%);
+  border-radius: 12px;
+  padding: 5px 0;
+  margin-bottom: 5px;
 }
 
 /* Style for Radio */
 .gender .container {
-display: block;
-position: relative;
-padding-left: 35px;
-/* margin-bottom: 12px; */
-margin-top: 7px;
-cursor: pointer;
-font-size: 18px;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+
+  /* margin-bottom: 12px; */
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
 }
 
 /* Hide the browser's default radio button */
 .gender .container input {
-position: absolute;
-opacity: 0;
-cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
-
-
-
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-content: "";
-position: absolute;
-display: none;
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.gender .container input:checked ~ .checkmark:after {
-display: block;
+.gender .container input:checked ~ .checkmark::after {
+  display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.gender .container .checkmark:after {
-top: 9px;
-left: 9px;
-width: 8px;
-height: 8px;
-border-radius: 50%;
-background: white;
+.gender .container .checkmark::after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
+
 /* END Style for Radio */
 
 .containerHW {
-display: flex;
-justify-content: space-around;
-align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* The Modal (background) */
 .modal {
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-padding-top: 100px; /* Location of the box */
-left: 0;
-top: 0;
-width: 90%; /* Full width */
-height: 90%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-padding-top: 300px;
-
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */ /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 90%; /* Full width */
+  height: 90%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0 0 0); /* Fallback color */
+  background-color: rgb(0 0 0 / 40%); /* Black w/ opacity */
+  padding-top: 300px;
 }
 
+@media screen and (width <= 1157px) {
+  .data {
+    margin-top: 55px;
+  }
 
+  .box {
+    width: 100%;
+    height: 650px;
+  }
 
-@media screen and (max-width: 1157px) {
-    .data{
-        margin-top: 55px;
-    }
-        
-    .box {
-        width: 100%;
-        height: 650px;
-    }
-    .workout {
-        width: 70%;
-        right: 10%;
-    }
-    .workout .workoutPic {
-        width: 100%;
-    }
-    .diet {
-        width: 70%;
-        right: 10%;
-    }
-    .diet .dietPic {
-        width: 100%;
-    }
-    .data {
-        width: 70%;
-    }
-    .input input {
-        width: 60%;
-    }
-    .inputW input {
-        width: 60%;
-    }
-    .inputH input {
-        width: 60%;
-    }
-    .inputActv input {
-        width: 60%;
-    }
-    button.calculate {
-        width: 30%;
-    }
-    button.reset {
-        width: 30%;
-    }
-    .result p{
-        right: 10%;
-        left: 27%;
-    }
-    .result h1 {
-        left: 5%;
-        
-    }
-    .result #BMR {
-        left: 150px;
-    }
-    .result #result {
-        right: 200px;
-    }
-    .comment {
-        width: 300px;
-    }
-    
+  .workout {
+    width: 70%;
+    right: 10%;
+  }
+
+  .workout .workoutPic {
+    width: 100%;
+  }
+
+  .diet {
+    width: 70%;
+    right: 10%;
+  }
+
+  .diet .dietPic {
+    width: 100%;
+  }
+
+  .data {
+    width: 70%;
+  }
+
+  .input input {
+    width: 60%;
+  }
+
+  .inputW input {
+    width: 60%;
+  }
+
+  .inputH input {
+    width: 60%;
+  }
+
+  .inputActv input {
+    width: 60%;
+  }
+
+  button.calculate {
+    width: 30%;
+  }
+
+  button.reset {
+    width: 30%;
+  }
+
+  .result p {
+    right: 10%;
+    left: 27%;
+  }
+
+  .result h1 {
+    left: 5%;
+  }
+
+  .result #BMR {
+    left: 150px;
+  }
+
+  .result #result {
+    right: 200px;
+  }
+
+  .comment {
+    width: 300px;
+  }
 }
-@media screen and (max-width: 740px) {
-    .box {
-        width: 100%;
-        height: 650px;
-    }
-    .workout {
-        width: 100%;
-        left: 2%;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .workout .workoutPic {
-        width: 100%;
-    }
-    .diet {
-        width: 100%;
-        left: 2%;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .diet .dietPic {
-        width: 100%;
-    }
-    .data {
-        margin-top: 25%;
-        width: 100%;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .input input {
-        width: 60%;
-    }
-    .inputW input {
-        width: 60%;
-    }
-    .inputH input {
-        width: 60%;
-    }
-    .inputActv input {
-        width: 60%;
-    }
-    button.calculate {
-        width: 30%;
-    }
-    button.reset {
-        width: 30%;
-    }
-    .result p{
-        right: 0;
-        left: 0;
-    }
-    .result h1 {
-       right: 0;
-        left: 0;
-    }
-    .result #BMR {
-        left: 150px;
-    }
-    .result #result {
-        right: 200px;
-    }
-    .comment {
-        width: 300px;
-    }
-    
+
+@media screen and (width <= 740px) {
+  .box {
+    width: 100%;
+    height: 650px;
+  }
+
+  .workout {
+    width: 100%;
+    left: 2%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .workout .workoutPic {
+    width: 100%;
+  }
+
+  .diet {
+    width: 100%;
+    left: 2%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .diet .dietPic {
+    width: 100%;
+  }
+
+  .data {
+    margin-top: 25%;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .input input {
+    width: 60%;
+  }
+
+  .inputW input {
+    width: 60%;
+  }
+
+  .inputH input {
+    width: 60%;
+  }
+
+  .inputActv input {
+    width: 60%;
+  }
+
+  button.calculate {
+    width: 30%;
+  }
+
+  button.reset {
+    width: 30%;
+  }
+
+  .result p {
+    right: 0;
+    left: 0;
+  }
+
+  .result h1 {
+    right: 0;
+    left: 0;
+  }
+
+  .result #BMR {
+    left: 150px;
+  }
+
+  .result #result {
+    right: 200px;
+  }
+
+  .comment {
+    width: 300px;
+  }
 }
