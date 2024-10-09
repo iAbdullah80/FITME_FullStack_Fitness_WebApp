@@ -27,7 +27,6 @@ jobs:
             FIX_JAVASCRIPT_PRETTIER: true
             FIX_JAVASCRIPT_STANDARD: true
             
-
       - name: Commit and push linting fixes
         if: always()
 
