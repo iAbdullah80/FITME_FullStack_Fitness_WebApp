@@ -23,6 +23,9 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             FIX_CSS: true
             FIX_CSS_PRETTIER: true
+            FIX_JAVASCRIPT_ES: true
+            FIX_JAVASCRIPT_PRETTIER: true
+            FIX_JAVASCRIPT_STANDARD: true
             
 
       - name: Commit and push linting fixes
