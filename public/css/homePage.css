@@ -1,115 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: 0.2s linear;
-    text-transform: capitalize;
-    font-family: "poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+  font-family: poppins, sans-serif;
 }
 
-body{
-    margin: 0;
-    padding: 0; 
-    justify-content: center;
-    align-items: center;
-    background:url('../img/GiveUp2.png');
-
-    background-size: 100% 100%;
-    min-height: 100vh;                     
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/GiveUp2.png");
+  background-size: 100% 100%;
+  min-height: 100vh;
 }
 
-.btn{
-    margin-top: 2rem;
-    width: 150px;
-    padding: 12px;
-    color: #fff;
-    background: tomato;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
+.btn {
+  margin-top: 2rem;
+  width: 150px;
+  padding: 12px;
+  color: #fff;
+  background: tomato;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.btn:hover{
-    background: rgba(212, 48, 48, 0.76);
-    transition: 0.4s;
-
-}
-section{
-    padding: 150px 0 50px 0;
+.btn:hover {
+  background: rgb(212 48 48 / 76%);
+  transition: 0.4s;
 }
 
-.home{
-display: flex;
-
-
-}
-.home .max-Width{
-width: 100%;
-display: flex;
-top: 140px;
+section {
+  padding: 150px 0 50px;
 }
 
-.home .home-content{
-width: 50%;
-padding: 2rem;    
-}
-.home h3{
-color: #fff;
-margin-top: 6rem;
-font-size:5 rem;
-font-family: "Roboto"; 
-font-size: 40px; 
-
-}
-.home p{
-color: rgb(194, 191, 191);
-margin-top: 1rem;
-font-size: 15px;
-
+.home {
+  display: flex;
 }
 
-
-
-.home .home-image{
-width: 50%;
-
-}
-.home .home-content img{
-width: 100%;
-height: 100%;
-
+.home .max-Width {
+  width: 100%;
+  display: flex;
+  top: 140px;
 }
 
+.home .home-content {
+  width: 50%;
+  padding: 2rem;
+}
+
+.home h3 {
+  color: #fff;
+  margin-top: 6rem;
+  font-family: Roboto;
+  font-size: 40px;
+}
+
+.home p {
+  color: rgb(194 191 191);
+  margin-top: 1rem;
+  font-size: 15px;
+}
+
+.home .home-image {
+  width: 50%;
+}
+
+.home .home-content img {
+  width: 100%;
+  height: 100%;
+}
 
 /* Media Query for iPhone size */
-@media only screen and (min-height: 810px) {
-    .home .max-Width{
-        margin-top: 200px;
-        flex-direction: column;
-    }
-    .home .home-content{
-        
-        width: 100%;
-    }
-    .home .home-image{
-        width: 100%;
-    }
+@media only screen and (height >= 810px) {
+  .home .max-Width {
+    margin-top: 200px;
+    flex-direction: column;
+  }
+
+  .home .home-content {
+    width: 100%;
+  }
+
+  .home .home-image {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (width <= 768px) {
+  .home .max-Width {
+    flex-direction: column;
+  }
 
-    .home .max-Width{
-        flex-direction: column;
-    }
-    .home .home-content{
-        
-        width: 90%;
-    }
-    .home .home-image{
-        width: 100%;
-    }
+  .home .home-content {
+    width: 90%;
+  }
+
+  .home .home-image {
+    width: 100%;
+  }
 }
-

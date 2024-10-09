@@ -1,122 +1,119 @@
-*{
-    margin-top: auto;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: 0.2s linear;
-    text-transform: capitalize;
-    font-family: "poppins", sans-serif;
- }
- body{
-     min-height: 500vh;
-     background-image:linear-gradient(rgb(224, 218, 218),lightblue);
-     
-     
- }
- .foodList{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
+* {
+  margin-top: auto;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+  font-family: poppins, sans-serif;
 }
- 
- .card {
-      position: relative;
 
-      margin-left: auto;
-      margin-right: auto;
-      width: 500px;
-      background: #e7e6e6;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
-      height: 200px;
-      
+body {
+  min-height: 500vh;
+  background-image: linear-gradient(rgb(224 218 218), lightblue);
+}
 
-      }
+.foodList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-      .a{
-         position: absolute;
-         left: 2%;
-         display: inline;
-      }
-      .b{
-         position: absolute;
-         right: 11%;
-         display: inline;
-      }
-        .Swork{
-         
-         position: absolute;
-         right: 1%;
-         top: 60px;
-         padding-left: 20px;
-        }
-      .Swork h4{
-         display: inline;
-         color: black;
-         font-size:15px ;
-         font-family:Courier, monospace;
-         font-weight: 300;   
-      }
-      .Gmuscles{
-         position: absolute;
-         left: 1%;
-         top: 60px;
-         padding-left: 20px;
-      }
+.card {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  background: #e7e6e6;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgb(0 0 0 / 50%);
+  height: 200px;
+}
 
-      .Gmuscles h4{
-         display: inline;
-         color: black;
-         font-size:15px ;
-         font-family:Courier, monospace;
-         font-weight: 300;
-      }
+.a {
+  position: absolute;
+  left: 2%;
+  display: inline;
+}
 
-      a{
-         color: #fff;
-      }
+.b {
+  position: absolute;
+  right: 11%;
+  display: inline;
+}
 
-     a:hover {
-       text-decoration: underline;
-       color: #baa6cf;
-            }
+.Swork {
+  position: absolute;
+  right: 1%;
+  top: 60px;
+  padding-left: 20px;
+}
 
- .card p{
-     position: absolute;
-     left:2%;
-     font-weight: 400;
-     font-size: 20px;
-     
-     
- }
- .container .title{
-     text-align: center;
-     font-weight: 300;
-     text-transform: uppercase;
-     font-size: 34px;
-     margin-bottom: 24px;
-     font-family:"Roboto",sans-serif;
-    
- }
+.Swork h4 {
+  display: inline;
+  color: black;
+  font-size: 15px;
+  font-family: Courier, monospace;
+  font-weight: 300;
+}
 
- .videos{
-     position: absolute;
-     top: 370px;
-     left: 2%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
- }  
+.Gmuscles {
+  position: absolute;
+  left: 1%;
+  top: 60px;
+  padding-left: 20px;
+}
+
+.Gmuscles h4 {
+  display: inline;
+  color: black;
+  font-size: 15px;
+  font-family: Courier, monospace;
+  font-weight: 300;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #baa6cf;
+}
+
+.card p {
+  position: absolute;
+  left: 2%;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.container .title {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 34px;
+  margin-bottom: 24px;
+  font-family: Roboto, sans-serif;
+}
+
+.videos {
+  position: absolute;
+  top: 370px;
+  left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* Media Queries for iPhone and iPad */
-@media only screen and (max-width: 768px) {
-
-   .videos {
-      margin-top: 15px;
-      top: auto;
-      left: auto;
-      flex-direction: column;
-   }
+@media only screen and (width <= 768px) {
+  .videos {
+    margin-top: 15px;
+    top: auto;
+    left: auto;
+    flex-direction: column;
+  }
 }
