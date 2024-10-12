@@ -1,8 +1,8 @@
-window.addEventListener('scroll', function() {
-  const header = document.querySelector('.header');
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('.header')
   if (window.pageYOffset > 0) {
-    header.classList.add('header-hidden');
+    header.classList.add('header-hidden')
   } else {
-    header.classList.remove('header-hidden');
+    header.classList.remove('header-hidden')
   }
-});
+})

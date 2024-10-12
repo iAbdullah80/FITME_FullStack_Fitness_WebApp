@@ -1,168 +1,166 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: 0.2s linear;
-    text-transform: capitalize;
-    font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+  font-family: poppins, sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('../img/GiveUp.png') no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../img/GiveUp.png") no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 .wrapper {
-    background-color: #ffff;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 5px black;
-    position: relative;
-    width: 480px;
-    height: auto;
-    left: 5%;
-    top: 200px;
-    border-radius: 10px;
-    padding: 15px 30px;
+  background-color: #ffff;
+  background: rgb(255 255 255 / 50%);
+  box-shadow: 0 0 5px black;
+  position: relative;
+  width: 480px;
+  height: auto;
+  left: 5%;
+  top: 200px;
+  border-radius: 10px;
+  padding: 15px 30px;
 }
 
 .wrapper h2 {
-    padding-top: 0px;
-    font-size: 35px;
-    text-align: center;
+  padding-top: 0;
+  font-size: 35px;
+  text-align: center;
 }
 
 .wrapper .input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
 }
 
 .input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: white;
-    text-transform: none;
-    padding: 20px 45px 20px 20px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgb(255 255 255 / 20%);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  text-transform: none;
+  padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder {
-    color: white;
+  color: white;
 }
 
 .input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
 }
 
 .wrapper .remmber-forgot {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
 }
 
 .remmber-forgot a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .remmber-forgot a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .wrapper .btn {
-    width: 100%;
-    height: 45px;
-    background: white;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
 }
 
 .wrapper .register-link {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
 }
 
 .register-link p a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .register-link p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .signUpWith {
-    text-align: center;
+  text-align: center;
 }
 
 .signUpWith i {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
 .signUpWith ion-icon {
-    color: white;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
+  color: white;
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 5px;
 }
 
 .input-box {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 /* Media Query for iPhone size */
-@media only screen and (min-height: 810px) {
-    .wrapper {
-       
-        left: 5%;
-        top: 350px;
-    }
+@media only screen and (height >= 810px) {
+  .wrapper {
+    left: 5%;
+    top: 350px;
+  }
 }
 
 /* Media Query for iPhone size */
-@media only screen and (max-width: 500px) {
-    .wrapper {
-        width: 90%;
-        left: 5%;
-        top: 200px;
-    }
+@media only screen and (width <= 500px) {
+  .wrapper {
+    width: 90%;
+    left: 5%;
+    top: 200px;
+  }
 }
 
 /* Media Query for iPhone size */
-@media only screen and (max-width: 375px) {
-    .wrapper {
-        width: 90%;
-        left: 5%;
-        top: 200px;
-    }
+@media only screen and (width <= 375px) {
+  .wrapper {
+    width: 90%;
+    left: 5%;
+    top: 200px;
+  }
 }
