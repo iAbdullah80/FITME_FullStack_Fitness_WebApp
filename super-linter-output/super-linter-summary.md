@@ -6,7 +6,7 @@
 | CSS                 | Fail ❌           |
 | CSS_PRETTIER        | Pass ✅           |
 | DOCKERFILE_HADOLINT | Pass ✅           |
-| GITHUB_ACTIONS      | Fail ❌           |
+| GITHUB_ACTIONS      | Pass ✅           |
 | GITLEAKS            | Pass ✅           |
 | JAVASCRIPT_ES       | Pass ✅           |
 | JAVASCRIPT_PRETTIER | Pass ✅           |
